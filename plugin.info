@@ -1,0 +1,6 @@
+name: core-perms
+authors: XolioWare Interactive
+version: 1.0
+main: xyz.chunkstories.coreperms.CorePermsPlugin
+
+command: perm
