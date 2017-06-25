@@ -1,10 +1,10 @@
 package xyz.chunkstories.coreperms;
 
+import io.xol.chunkstories.api.player.Player;
 import io.xol.chunkstories.api.plugin.commands.Command;
 import io.xol.chunkstories.api.plugin.commands.CommandEmitter;
 import io.xol.chunkstories.api.plugin.commands.CommandHandler;
-import io.xol.chunkstories.api.server.Player;
-import io.xol.chunkstories.server.ServerConsole;
+import io.xol.chunkstories.api.plugin.commands.ServerConsole;
 import xyz.chunkstories.coreperms.CorePermsPermissionsManager.Group;
 
 //(c) 2015-2017 XolioWare Interactive

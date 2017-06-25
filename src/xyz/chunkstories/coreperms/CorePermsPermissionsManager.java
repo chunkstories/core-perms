@@ -10,8 +10,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import io.xol.chunkstories.api.player.Player;
 import io.xol.chunkstories.api.server.PermissionsManager;
-import io.xol.chunkstories.api.server.Player;
 
 public class CorePermsPermissionsManager implements PermissionsManager {
 
