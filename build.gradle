@@ -1,0 +1,34 @@
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'maven'
+
+//TODO Make version depend on Git ?
+version = '1.0'
+description = 'Provides a basic yet functional hierarchical permissions system.'
+
+repositories {
+	mavenCentral();
+	maven {
+		url "http://maven.xol.io/repository/public/"
+	}
+}
+
+sourceSets {
+	main {
+		java {
+			srcDir 'src'
+		}
+		resources {
+			srcDir 'src'
+		}
+	}
+}
+
+jar {
+	from 'plugin.info'
+}
+	
+dependencies {
+	compile group: 'io.xol.chunkstories', name: 'api', version: '103'
+}
