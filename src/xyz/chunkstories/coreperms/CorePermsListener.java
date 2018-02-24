@@ -19,6 +19,6 @@ public class CorePermsListener implements Listener {
 		
 		Group g = corePermsPlugin.permissionsManager.getPlayerGroup(event.getPlayer());
 		System.out.println(g.prefix);
-		event.setFormattedMessage(g.prefix + event.getPlayer().getDisplayName() + g.suffix + " > " + event.getMessage());
+		event.setFormattedMessage((g.prefix == null ? "" : g.prefix) + event.getPlayer().getDisplayName() + (g.suffix == null ? "" : g.suffix) + " > " + event.getMessage());
 	}
 }
